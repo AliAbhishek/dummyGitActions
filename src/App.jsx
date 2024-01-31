@@ -1,23 +1,23 @@
 import React, { useEffect, useState } from 'react'
-import axios from "axios"
-import Add from './Add'
+// import axios from "axios"
+// import Add from './Add'
 
 
 const App = () => {
 
-  const [data,setData]  = useState([])
-  const [flag,setFlag] = useState(true)
+  // const [data,setData]  = useState([])
+  // const [flag,setFlag] = useState(true)
 
-  useEffect(()=>{
-    axios.get("http://dev-softwiz-002/Company").then(res=>setData(res.data))
+  // useEffect(()=>{
+  //   axios.get("http://dev-softwiz-002/Company").then(res=>setData(res.data))
 
-  },[flag])
+  // },[flag])
 
  
-  const handledelete=(id)=>{
-    axios.delete("http://dev-softwiz-002/Company/"+id).then(res=>setFlag(!flag))
+  // const handledelete=(id)=>{
+  //   axios.delete("http://dev-softwiz-002/Company/"+id).then(res=>setFlag(!flag))
 
-  }
+  // }
 
   return (
     // <div>
