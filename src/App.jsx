@@ -20,35 +20,36 @@ const App = () => {
   }
 
   return (
-    <div>
-      <div><Add name="add" flag={flag} setFlag={setFlag}/></div>
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Address</th>
-          </tr>
-        </thead>
-        <tbody>
-          {data.map((x)=>{return <tr>
-            <td>{x.CompanyName}</td>
-            <td>{x.CompanyAddress}</td>
-            <td><button><Add name="edit" id={x.CompanyID} cname={x.CompanyName} caddress={x.CompanyAddress}  
+    // <div>
+    //   <div><Add name="add" flag={flag} setFlag={setFlag}/></div>
+    //   <table>
+    //     <thead>
+    //       <tr>
+    //         <th>Name</th>
+    //         <th>Address</th>
+    //       </tr>
+    //     </thead>
+    //     <tbody>
+    //       {data.map((x)=>{return <tr>
+    //         <td>{x.CompanyName}</td>
+    //         <td>{x.CompanyAddress}</td>
+    //         <td><button><Add name="edit" id={x.CompanyID} cname={x.CompanyName} caddress={x.CompanyAddress}  
                               
-                              cemail={x.EmailAddress}
-                              cnumber={x.ContactNumber}
+    //                           cemail={x.EmailAddress}
+    //                           cnumber={x.ContactNumber}
                               
-                              setFlag={setFlag}
-                              flag={flag}
-                              countryname={x.CountryID}
-                              statename={x.StateID}
-                              cityname={x.CityID}
-                              imageurl={x.FilePath}/></button></td>
-            <td><button onClick={()=>handledelete(x.CompanyID)}>Delete</button></td>
-          </tr>})}
-        </tbody>
-      </table>
-    </div>
+    //                           setFlag={setFlag}
+    //                           flag={flag}
+    //                           countryname={x.CountryID}
+    //                           statename={x.StateID}
+    //                           cityname={x.CityID}
+    //                           imageurl={x.FilePath}/></button></td>
+    //         <td><button onClick={()=>handledelete(x.CompanyID)}>Delete</button></td>
+    //       </tr>})}
+    //     </tbody>
+    //   </table>
+    // </div>
+    <p>hello world</p>
   )
 }
 
